@@ -14,7 +14,7 @@ expression in the English language.
 \arguments{
   \item{x}{
     A numeric vector of class \code{english}.
-}
+  }
   \item{\dots}{
     Currently unused.
 }
@@ -39,7 +39,10 @@ expression in the English language.
   \code{\link{print.english}}.
 }
 \examples{
-as.character(english(10001001 + 1:10))
+oneOone <- english(101, UK = FALSE)
+as.character(oneOone)
+as.character(as.english(oneOone, UK = TRUE))
+as.character(oneOone + 1:10)
 }
 \keyword{ arith }
 

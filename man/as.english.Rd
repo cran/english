@@ -16,16 +16,22 @@
 \usage{
 as.english(x, ...)
 english(x, ...)
-\method{english}{numeric}(x, ...)
-\method{english}{english}(x, ...)
 \method{english}{default}(x, ...)
+\method{english}{numeric}(x, UK, ...)
+\method{english}{english}(x, UK, ...)
 }
 \arguments{
   \item{x}{
     Any numeric object.  If the components are not integers, they are
     rounded.  In the case of \code{english.default} this may be an
     object of any class, but will always result in an error.
-}
+  }
+  \item{UK}{
+    A logical flag, should English-style numbers be given (\code{TRUE})
+    or American style (\code{FALSE})? If missing, a default value is
+    chosen as \code{TRUE} unless the locale in use is guessed to be an
+    English locale of the USA.
+  }
   \item{\dots}{
     Currently unused.
 }
@@ -49,12 +55,15 @@ english(x, ...)
   \url{http://tolstoy.newcastle.edu.au/R/help/05/04/2715.html}.
 }
 \author{
-  Bill Venables
+  John Fox and Bill Venables
 }
 \seealso{
   \code{\link{as.character.english}}, \code{\link{print.english}}.
 }
 \examples{
+english(1010, UK = FALSE)
+english(1010, UK = TRUE)
+english(101)       ## UK not given: result will depend on the locale
 as.english(10001001) + (-5):5
 }
 \keyword{ arith }

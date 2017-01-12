@@ -27,7 +27,7 @@ A numeric vector of class \code{english}.
   \url{http://tolstoy.newcastle.edu.au/R/help/05/04/2715.html}.
 }
 \author{
-Bill Venables
+  John Fox and Bill Venables
 }
 
 \seealso{

@@ -30,7 +30,7 @@ The original object, invisibly.
   \url{http://tolstoy.newcastle.edu.au/R/help/05/04/2715.html}.
 }
 \author{
-  Bill Venables
+  John Fox and Bill Venables
 }
 
 \seealso{

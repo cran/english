@@ -34,14 +34,16 @@ sorted order.
   \url{http://tolstoy.newcastle.edu.au/R/help/05/04/2715.html}.
 }
 \author{
-  Bill Venables
+  John Fox and Bill Venables
 }
 \seealso{
   \code{\link{english}}.
 }
 \examples{
-(x <- english(sample(1:100, 5)))
-sort(x)
+set.seed(1010)
+x <- english(sample(1:100, 5))
+noquote(matrix(as.character(x)))
+noquote(matrix(as.character(sort(x))))
 }
 \keyword{ arith }
 

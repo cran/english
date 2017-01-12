@@ -8,3 +8,4 @@ S3method(english, default)
 S3method(as.character, english)
 S3method(Ops, english)
 S3method(as.numeric, english)
+

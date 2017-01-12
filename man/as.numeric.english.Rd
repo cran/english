@@ -24,7 +24,7 @@ An object of class \code{numeric}.
 }
 
 \author{
-  Bill Venables.
+  John Fox and Bill Venables.
 }
 
 
