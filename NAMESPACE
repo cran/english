@@ -1,4 +1,4 @@
-export(as.english, english)
+export(as.english, english, ordinal)
 
 S3method(print, english)
 S3method(sort, english)
@@ -8,4 +8,7 @@ S3method(english, default)
 S3method(as.character, english)
 S3method(Ops, english)
 S3method(as.numeric, english)
+S3method(ordinal, numeric)
+S3method(ordinal, english)
+S3method(ordinal, character)
 

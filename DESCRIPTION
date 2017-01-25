@@ -1,9 +1,9 @@
 Package: english
 Type: Package
 Title: Translate Integers into English
-Version: 1.0-2
-Date: 2017-01-14
-Author: John Fox and Bill Venables.
+Version: 1.1
+Date: 2017-01-25
+Author: John Fox, Bill Venables and Anthony Domenico
 Maintainer: Bill Venables <Bill.Venables@gmail.com>
 Description: Allow numbers to be presented in an English language
         version, one, two, three, ...
@@ -11,6 +11,6 @@ Imports: utils
 License: GPL-2
 LazyLoad: yes
 NeedsCompilation: no
-Packaged: 2017-01-12 10:39:32 UTC; bill
+Packaged: 2017-01-25 06:53:45 UTC; bill
 Repository: CRAN
-Date/Publication: 2017-01-12 15:42:35
+Date/Publication: 2017-01-25 09:02:51

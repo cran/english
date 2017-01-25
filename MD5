@@ -1,10 +1,12 @@
-6b01cc2d3988a5b8ba3cbedaf5423820 *DESCRIPTION
-c7015f4a42a5390cce19d9c8de5ec9ed *NAMESPACE
+29c370fa9d9f7f84b252b196cd4c323f *DESCRIPTION
+dd025a25fe04328fe040a85083285f4f *NAMESPACE
 1e67944c5c49e089e0e1a9bcac1cc3f0 *R/english.R
+5145a91ae83736312698adf067101d61 *R/ordinal.R
 f6a7143e33d11454ea1b6f9b3884ad4a *man/Ops.english.Rd
 1fbdfd99758537f22c6acd031788c159 *man/as.character.english.Rd
 9435061255f29f4c8485d8f7a58cc05c *man/as.english.Rd
 acbdc7de8e1e72379e392930706ef73f *man/as.numeric.english.Rd
-a376d2c13df5ea1a6275be11a1efe2ec *man/english-package.Rd
+d53f5a7ee96fc8fa12e892c8c3ff20cb *man/english-package.Rd
+345d31cc77ba2ff0e6ab4199c7e8a9b8 *man/ordinal.Rd
 9cfbea95b7d99ba1a2a638c2e45b1ce8 *man/print.english.Rd
 7ec2bbd5d6912c9a17878ba5bff61833 *man/sort.english.Rd
