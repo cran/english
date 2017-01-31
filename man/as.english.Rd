@@ -4,6 +4,8 @@
 \alias{english.numeric}
 \alias{english.default}
 \alias{english.english}
+\alias{[.english}
+\alias{rep.english}
 \title{
   Generic functions and methods for S3 class english
 }
@@ -14,11 +16,13 @@
   the form of their customary English expression.
 }
 \usage{
-as.english(x, ...)
-english(x, ...)
-\method{english}{default}(x, ...)
-\method{english}{numeric}(x, UK, ...)
-\method{english}{english}(x, UK, ...)
+as.english(x, \dots)
+english(x, \dots)
+\method{english}{default}(x, \dots)
+\method{english}{numeric}(x, UK, \dots)
+\method{english}{english}(x, UK, \dots)
+\method{[}{english}(x, i)
+\method{rep}{english}(x, \dots)
 }
 \arguments{
   \item{x}{
@@ -33,7 +37,11 @@ english(x, ...)
     English locale of the USA.
   }
   \item{\dots}{
-    Currently unused.
+    For \code{rep}, arguments passed on to other methods.  Ignored in
+    all other cases.
+}
+  \item{i}{
+    Any allowable form of index vector.
 }
 }
 \details{
@@ -51,8 +59,8 @@ english(x, ...)
   not.
 }
 \references{
-  See original note by John Fox at
-  \url{http://tolstoy.newcastle.edu.au/R/help/05/04/2715.html}.
+  See original note by John Fox in the Programmers Niche section of
+  \url{https://cran.r-project.org/doc/Rnews/Rnews_2005-1.pdf}.
 }
 \author{
   John Fox and Bill Venables
@@ -63,7 +71,11 @@ english(x, ...)
 \examples{
 english(1010, UK = FALSE)
 english(1010, UK = TRUE)
-english(101)       ## UK not given: result will depend on the locale
+## The default UK setting will depend on the locale:
+cat("\n", ifelse(grepl("^(en_us|english_united)",
+    tolower(Sys.getlocale("LC_CTYPE"))), "USA", "UK"),
+    "English is your default\n")
+english(101)       ## UK not given: deduced from locale
 as.english(10001001) + (-5):5
 }
 \keyword{ arith }

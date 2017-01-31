@@ -41,8 +41,18 @@ ordinal(x, ...)
 \seealso{
   \code{\link{as.character.english}}
 }
+\references{
+  See original note by John Fox in the Programmers Niche section of
+  \url{https://cran.r-project.org/doc/Rnews/Rnews_2005-1.pdf}.
+}
 \examples{
+## for UK style English:
 ordinal(c(1, 9, 10, 11, 12, 19, 20, 21, 99, 100, 101, 109, 111,
-          119, 1000, 1100, 1199, 9999, 10000, 10001))
+          119, 1000, 1100, 1199, 9999, 10000, 10001), UK = TRUE)
+## for USA style English:
+ordinal(c(1, 9, 10, 11, 12, 19, 20, 21, 99, 100, 101, 109, 111,
+          119, 1000, 1100, 1199, 9999, 10000, 10001), UK = FALSE)
+## For mothers of small children:
+cat(paste("This is the", ordinal(1:5), "time I've told you!"), sep = "\n")
 }
 \keyword{ arith }

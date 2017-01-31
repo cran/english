@@ -2,21 +2,17 @@ ordinal <- function(x, ...)
   UseMethod("ordinal")
 
 ordinal.english <- local({
-  Cards <- c("one", "two", "three", "four", "five", "six",
-             "seven", "eight", "nine", "twelve", "twenty",
-             "thirty", "forty", "fifty", "sixty", "seventy",
-             "eighty", "ninety")
-  
-  Ords <- c("first", "second", "third", "fourth", "fifth", "sixth",
-            "seventh", "eighth", "ninth", "twelfth", "twentieth",
-            "thirtieth", "fortieth", "fiftieth", "sixtieth","seventieth",
-            "eightieth", "ninetieth")
+  Cards <- c("one",  "two",    "three", "eight",  "nine")  
+  Ords <- c("first", "second", "third", "eighth", "ninth")
   
   function(x, ...) {
     initial <- sub("^(.*) (.*)$", "\\1 ", x)
     final   <- sub("^(.*) (.*)$", "\\2",  x)
     
     initial[initial == final] <- ""
+
+    final <- sub("ty$", "tie", final) ## 20, 30, ...
+    final <- sub("ve$", "f"  , final) ## 5 and 12
     
     final <- ifelse(final %in% Cards, Ords[match(final, Cards)],
                     paste0(final, "th"))

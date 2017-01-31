@@ -2,7 +2,6 @@ as.english <- english <- function (x, ...) {
   UseMethod("english")
 }
 
-
 english.default <- function (x, ...)
     stop("no method defined for objects of class ",
          paste(dQuote(class(x)), collapse = ", "))
@@ -118,3 +117,13 @@ as.character.english <- local({
     r
   }
 })
+
+rep.english <- function (x, ...) 
+    structure(rep(unclass(x), ...), class = class(x))
+
+`[.english` <- function(x, i) {
+    cl <- oldClass(x)
+    y <- NextMethod("[")
+    oldClass(y) <- cl
+    y
+}

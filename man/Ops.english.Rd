@@ -23,8 +23,8 @@ and reinstates the class \code{english} on the result.
 A numeric vector of class \code{english}.
 }
 \references{
-  See original note by John Fox at
-  \url{http://tolstoy.newcastle.edu.au/R/help/05/04/2715.html}.
+  See original note by John Fox in the Programmers Niche section of
+  \url{https://cran.r-project.org/doc/Rnews/Rnews_2005-1.pdf}.
 }
 \author{
   John Fox and Bill Venables

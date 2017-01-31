@@ -12,8 +12,8 @@ English
   \tabular{ll}{
     Package: \tab english\cr
     Type: \tab Package\cr
-    Version: \tab 1.1\cr
-    Date: \tab 2017-01-25\cr
+    Version: \tab 1.1-1\cr
+    Date: \tab 2017-01-30\cr
     License: \tab GPL-2\cr
     LazyLoad: \tab yes\cr
 }
@@ -30,13 +30,13 @@ example rather than to solve a likely real problem, though there could
 well be some applications in unusual contexts.
 }
 \author{
-  John Fox and Bill Venables.
+  John Fox and Bill Venables with additional ideas and code from Anthony Damico.
 
   Maintainer: Bill Venables, <Bill.Venables@gmail.com>
 }
 \references{
-  See original note by John Fox at
-  \url{http://tolstoy.newcastle.edu.au/R/help/05/04/2715.html}.
+  See original note by John Fox in the Programmers Niche section of
+  \url{https://cran.r-project.org/doc/Rnews/Rnews_2005-1.pdf}.
 }
 \keyword{ package }
 \seealso{
@@ -47,4 +47,6 @@ english(1:10)^2 + 1:10
 (x <- english(sample(1:100, 10)))
 sort(x)
 toupper(english(1:10))
+## For mothers of small children:
+cat(paste("This is the", ordinal(1:5), "time I've told you!"), sep = "\n")
 }

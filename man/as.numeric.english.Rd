@@ -22,12 +22,13 @@
 \value{
 An object of class \code{numeric}.
 }
-
 \author{
   John Fox and Bill Venables.
 }
-
-
+\references{
+  See original note by John Fox in the Programmers Niche section of
+  \url{https://cran.r-project.org/doc/Rnews/Rnews_2005-1.pdf}.
+}
 \seealso{
 \code{\link{english}}, \code{\link{as.english}}.
 }
