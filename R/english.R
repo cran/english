@@ -127,3 +127,7 @@ rep.english <- function (x, ...)
     oldClass(y) <- cl
     y
 }
+
+format.english <- function(x, ...) {
+  format(as.character.english(x), ...)
+}

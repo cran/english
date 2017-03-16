@@ -2,6 +2,7 @@ export(as.english, english, ordinal)
 
 S3method("[", english)
 S3method(rep, english)
+S3method(format, english)
 S3method(print, english)
 S3method(sort, english)
 S3method(english, numeric)

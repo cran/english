@@ -6,6 +6,7 @@
 \alias{english.english}
 \alias{[.english}
 \alias{rep.english}
+\alias{format.english}
 \title{
   Generic functions and methods for S3 class english
 }
@@ -23,6 +24,7 @@ english(x, \dots)
 \method{english}{english}(x, UK, \dots)
 \method{[}{english}(x, i)
 \method{rep}{english}(x, \dots)
+\method{format}{english}(x, \dots)
 }
 \arguments{
   \item{x}{
@@ -37,8 +39,8 @@ english(x, \dots)
     English locale of the USA.
   }
   \item{\dots}{
-    For \code{rep}, arguments passed on to other methods.  Ignored in
-    all other cases.
+    For \code{rep}, and \code{format} arguments passed on to other
+    methods.  Ignored in all other cases.
 }
   \item{i}{
     Any allowable form of index vector.
