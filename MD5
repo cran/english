@@ -1,12 +1,12 @@
-457cfa8519f2fce9955d79148a991d56 *DESCRIPTION
+43db5b7edef5be88700f2fce9268a968 *DESCRIPTION
 148c3b607020231f03de9febe257c066 *NAMESPACE
-b619d0b4093704319de674ee17586f6a *R/english.R
+cf6f19f69e1f5cb70fe7dc43a19a13fe *R/english.R
 5e460417cfb58d06f04129d83b19ed83 *R/ordinal.R
 eca9cde1a1447ef2b6680f11c9514f61 *man/Ops.english.Rd
 761fa59dbef924698489420bebaa2bd8 *man/as.character.english.Rd
 8d049553ea07bb90f983e36965a83e79 *man/as.english.Rd
 1abc0af03001966d4476f3e99449ca8c *man/as.numeric.english.Rd
-9157f654481f073d7235632cbf9edcba *man/english-package.Rd
+193aebbab395ca39472653dc91bc1d50 *man/english-package.Rd
 ea33dbe7d66ac12517c62bbdecc0f732 *man/ordinal.Rd
 e940df38873cde4a949b8765fd28fd6c *man/print.english.Rd
 096a649b41369b035d98e6a41b9ee6ae *man/sort.english.Rd
