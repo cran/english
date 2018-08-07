@@ -12,8 +12,8 @@ English
   \tabular{ll}{
     Package: \tab english\cr
     Type: \tab Package\cr
-    Version: \tab 1.1-3\cr
-    Date: \tab 2018-05-19\cr
+    Version: \tab 1.1-4\cr
+    Date: \tab 2018-08-07\cr
     License: \tab GPL-2\cr
     LazyLoad: \tab yes\cr
 }
@@ -28,6 +28,13 @@ facility to the function \code{as.roman} in the \code{utils} package.
 The main purpose of the package is to present an interesting programming
 example rather than to solve a likely real problem, though there could
 well be some applications in unusual contexts.
+
+Note added on Version 1.1-4.  The two small helper functions \code{words}
+and \code{Words} are included to facilitate inline code inserts in
+R markdown files.  See the help files for examples.  The \code{ordinal}
+function produces character strings and may be used directly in inline
+code inserts.  Use \verb{`r words(10000)`} rather than \verb{`r english(10000)`}
+in R markdown files.
 }
 \author{
   John Fox and Bill Venables with additional ideas and code from Anthony Damico.
