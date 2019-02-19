@@ -41,7 +41,7 @@ facilitate that process.
 }
 
 \seealso{
-\code{\link{as.character.english}}
+\code{\link{as.character.english}}, \code{\link{indefinite}}
 }
 \examples{
   paste("The Duke of York had", words(10006), "men")

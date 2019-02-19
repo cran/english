@@ -34,7 +34,9 @@ english(x, \dots)
   }
   \item{UK}{
     A logical flag, should English-style numbers be given (\code{TRUE})
-    or American style (\code{FALSE})? If missing, a default value is
+    or American-style (\code{FALSE})?
+    If missing, may be set as an option, \code{options(englisl.UK = TRUE)}
+    with, if unset, a default value
     chosen as \code{TRUE} unless the locale in use is guessed to be an
     English locale of the USA.
   }
@@ -77,8 +79,14 @@ english(1010, UK = TRUE)
 cat("\n", ifelse(grepl("^(en_us|english_united)",
     tolower(Sys.getlocale("LC_CTYPE"))), "USA", "UK"),
     "English is your default\n")
-english(101)       ## UK not given: deduced from locale
+english(101)       ## UK not given: deduced from options
+
+myUK <- getOption("english.UK",
+                  !grepl("^(en_us|english_united)",
+                         tolower(Sys.getlocale("LC_CTYPE"))))
+options(english.UK = FALSE) ## American spoken here, for now.
 as.english(10001001) + (-5):5
+options(english.UK = myUK)  ## restore original setting.
 }
 \keyword{ arith }
 

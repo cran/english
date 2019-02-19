@@ -9,8 +9,9 @@ english.default <- function (x, ...)
 
 english.numeric <- english.english <- function (x, UK, ...) {
   if(missing(UK)) {
-    UK <- !grepl("^(en_us|english_united)",
-                  tolower(Sys.getlocale("LC_CTYPE")))
+    UK <- getOption("english.UK",
+                    !grepl("^(en_us|english_united)",
+                           tolower(Sys.getlocale("LC_CTYPE"))))
   } else {
     UK <- as.logical(UK)[1]
     if(is.na(UK))

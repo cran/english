@@ -1,4 +1,4 @@
-export(as.english, english, ordinal, words, Words)
+export(as.english, english, ordinal, words, Words, indefinite)
 
 S3method("[", english)
 S3method(rep, english)
