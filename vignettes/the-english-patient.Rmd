@@ -1,0 +1,111 @@
+---
+title: "Numbers as English Words"
+author: "Bill Venables"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE,
+                      comment = "")
+library(english)
+```
+
+## Genesis and development
+
+In answer to a question on R-help John Fox provided an elegant R
+function to translate integers into English numbers.  The present
+package extends this code to an S3 class, with constructor functions and
+methods to make this original idea more conveniently available.
+
+The function `as.english` is intended to provide a parallel
+facility to the function `as.roman` in the `utils` package.
+
+The main purpose of the package is to present an interesting programming
+example rather than to solve a likely real problem, though there could
+well be some applications in unusual contexts.
+
+Note added in Version 1.1-4.  The two small helper functions `words`
+and `Words` are included to facilitate inline code inserts in
+R markdown files.  See the help files for examples.  The `ordinal`
+function produces character strings and may be used directly in inline
+code inserts.  Use 
+`` `r '\x60r words(103)\x60'` ``
+rather than
+`` `r '\x60r english(103)\x60'` ``
+in R markdown files.
+
+Note added in Version 1.2-0.  The function `indefinite` added for
+algorithmically including an apprporiate indefinite article in a
+document insert.  Based on a suggestion of Anne Pier Salverda.
+
+The capitalised version, `Indefinite`, was added in 1.2-1.
+
+This vignette was added in 1.2-2.
+
+## Examples
+
+The main use envisaged for these tools is for code inserts in either
+R markdown or R noweb documents.  It is easier here to demonstrate their
+function in plain code chunks, as below.
+
+The resolution of an integer into words depends on the style of English
+chosen.  English (UK) style inserts the conjunction *and* in various places
+where American (USA) style omits it.  Wheter or not this happens is
+governed by the `english.UK` option, (a logical variable, `TRUE` for UK
+English), but if this option is unset, a guess is made as to which style
+is needed depending on the user's locale.
+
+```{r, results = "hold"}
+soldiers <- 10006
+oldOpt <- options(english.UK = TRUE)
+cat("The Duke of York had approximately", words(soldiers), "men.\n")
+cat("How many did you say?  ", Words(soldiers), ", approximately.\n", sep = "")
+```
+```{r, results = "hold"}
+options(english.UK = FALSE)
+cat("The Duke of York had approximately", words(soldiers), "men.\n")
+cat("How many did you say?  ", Words(soldiers), ", approximately.\n", sep = "")
+options(oldOpt)
+```
+
+Ordinal numbers are handled as well.
+
+```{r}
+days <- 1:6
+cat(paste("\nOn the", ordinal(days), "day of Christmas..."))
+```
+
+The indefinite article, "a" or "an", can be algorithmically chosen and prepended,
+either in lower case or capitalised:
+
+```{r}
+steps <- 7:11
+cat(paste0("\nThis is ", indefinite(steps), "-step process..."))
+cat(paste0("\nThis is ", indefinite(steps, words = FALSE), "-step process..."))
+cat(paste0("\n", Indefinite(ordinal(steps)), " step of the process is..."))
+```
+
+Roman notation is provided by the `utils::as.roman` function in a similar way:
+
+```{r, results = "hold"}
+numbers <- c(1:10, 1999, 2019)
+punct <- c(rep(",", 10), " and",".")
+cat(c("In Roman notation:", 
+      paste0("\n\t", Words(numbers), " is written as \"",
+             utils::as.roman(numbers),"\"", punct)))
+cat("\nDoing arithmetic in Roman notation can be difficult.")
+```
+
+Some arithmetic operations are allowed for `english` objects, but to make
+sense the result should be in whole numbers.
+
+```{r}
+english(100) + (-5):5
+```
+
+

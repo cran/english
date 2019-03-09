@@ -31,5 +31,8 @@ in R markdown files.
 Note added in Version 1.2-0.  The function \code{indefinite} added for
 algorithmically including an apprporiate indefinite article in a
 document insert.  Based on a suggestion of Anne Pier Salverda.
+
+The capitalized version, \code{Indefinite} added in 1.2-1, and a
+vignette added in 1.2-2.
 }
 \keyword{internal}
