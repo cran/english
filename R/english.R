@@ -1,30 +1,30 @@
-#' English
-#'
-#' @details
-#' In answer to a question on R-help John Fox provided an elegant R
-#' function to translate integers into English numbers.  The present
-#' package extends this code to an S3 class, with constructor functions and
-#' methods to make this original idea more conveniently available.
-#'
-#' The function \code{as.english} is intended to provide a parallel
-#' facility to the function \code{as.roman} in the \code{utils} package.
-#'
-#' The main purpose of the package is to present an interesting programming
-#' example rather than to solve a likely real problem, though there could
-#' well be some applications in unusual contexts.
-#'
-#' Note added in Version 1.1-4.  The two small helper functions \code{words}
-#' and \code{Words} are included to facilitate inline code inserts in
-#' R markdown files.  See the help files for examples.  The \code{ordinal}
-#' function produces character strings and may be used directly in inline
-#' code inserts.  Use \verb{`r words(10000)`} rather than \verb{`r english(10000)`}
-#' in R markdown files.
-#'
-#' Note added in Version 1.2-0.  The function \code{indefinite} added for
-#' algorithmically including an apprporiate indefinite article in a
-#' document insert.  Based on a suggestion of Anne Pier Salverda.
-#' @keywords internal
-"_PACKAGE"
+## #' English
+## #'
+## #' @details
+## #' In answer to a question on R-help John Fox provided an elegant R
+## #' function to translate integers into English numbers.  The present
+## #' package extends this code to an S3 class, with constructor functions and
+## #' methods to make this original idea more conveniently available.
+## #'
+## #' The function \code{as.english} is intended to provide a parallel
+## #' facility to the function \code{as.roman} in the \code{utils} package.
+## #'
+## #' The main purpose of the package is to present an interesting programming
+## #' example rather than to solve a likely real problem, though there could
+## #' well be some applications in unusual contexts.
+## #'
+## #' Note added in Version 1.1-4.  The two small helper functions \code{words}
+## #' and \code{Words} are included to facilitate inline code inserts in
+## #' R markdown files.  See the help files for examples.  The \code{ordinal}
+## #' function produces character strings and may be used directly in inline
+## #' code inserts.  Use \verb{`r words(10000)`} rather than \verb{`r english(10000)`}
+## #' in R markdown files.
+## #'
+## #' Note added in Version 1.2-0.  The function \code{indefinite} added for
+## #' algorithmically including an apprporiate indefinite article in a
+## #' document insert.  Based on a suggestion of Anne Pier Salverda.
+## #' @keywords internal
+#' "_PACKAGE"
 
 #' Numbers in Englis Words
 #'

@@ -12,7 +12,8 @@
 \alias{format.english}
 \alias{as.character.english}
 \alias{sort.english}
-\title{Numbers in Englis Words}
+\title{"_PACKAGE"
+Numbers in Englis Words}
 \usage{
 as.english(x, ...)
 

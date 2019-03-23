@@ -2,7 +2,11 @@
 title: "Numbers as English Words"
 author: "Bill Venables"
 date: "`r Sys.Date()`"
-output: rmarkdown::html_vignette
+output: 
+  pdf_document:
+    includes:
+      in_header: header.tex
+  html_document: null
 vignette: >
   %\VignetteIndexEntry{Vignette Title}
   %\VignetteEngine{knitr::rmarkdown}

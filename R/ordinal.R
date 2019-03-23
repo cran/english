@@ -47,8 +47,6 @@ ordinal.character <- ordinal.english
 #' @rdname ordinal
 #' @export
 print.ordinal <- function(x, ...) {
-  y <- x
-  x <- noquote(unclass(x))
-  NextMethod("print")
-  invisible(y)
+  print(noquote(unclass(x)))
+  invisible(x)
 }
