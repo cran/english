@@ -67,5 +67,5 @@ sort(jumble)
 sort(x)
 toupper(english(1:10))
 ## For mothers of small children:
-cat(paste("This is the", ordinal(1:5), "time I've told you!"), sep = "\\n")
+cat(paste("This is the", ordinal(1:5), "time I've told you!"), sep = "\n")
 }

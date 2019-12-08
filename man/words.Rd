@@ -23,6 +23,6 @@ in-text inserts.  The capitalized version, \code{Words},
 makes the initial letter of the result upper case.
 }
 \examples{
-cat("The Duke of York had ", words(10006), " men.\\n", sep = "")
-cat("How many did he have? ", Words(10006), ".\\n", sep = "")
+cat("The Duke of York had ", words(10006), " men.\n", sep = "")
+cat("How many did he have? ", Words(10006), ".\n", sep = "")
 }

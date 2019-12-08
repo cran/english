@@ -128,7 +128,7 @@ as.character.english <- function (x, ...) {
   helper <- function (x) {
     digits <- split_digits(x)
     nDigits <- length(digits)
-    if (nDigits == 1)
+    out <- if (nDigits == 1)
       as.vector(ones[digits])
     else if (nDigits == 2)
       if (x <= 19)
@@ -150,6 +150,7 @@ as.character.english <- function (x, ...) {
                  and(digits[(3 * nSuffix):1]),
                  helper(makeNumber(digits[(3 * nSuffix):1]))))
     }
+    gsub("y ([[:alpha:]]+)", "y-\\1", out) ## correct hyphenation
   }
   r <- character(length(x))
   bad <- is.na(x) | is.nan(x) | is.infinite(x)

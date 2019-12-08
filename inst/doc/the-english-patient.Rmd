@@ -1,14 +1,13 @@
 ---
-title: "Numbers as English Words"
+title: "Numbers into English Words"
 author: "Bill Venables"
 date: "`r Sys.Date()`"
 output: 
   pdf_document:
     includes:
       in_header: header.tex
-  html_document: null
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{Numbers into English Words}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

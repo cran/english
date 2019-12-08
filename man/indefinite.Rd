@@ -40,5 +40,5 @@ letter: "An" or "A".
 \examples{
 indefinite(1:12)
 paste0(Indefinite(1:12, FALSE), "-stage process")
-cat(paste(Indefinite(ordinal(1:10)), " point is ...\\n", sep = ""))
+cat(paste(Indefinite(ordinal(1:10)), " point is ...\n", sep = ""))
 }

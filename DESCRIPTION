@@ -1,8 +1,8 @@
 Package: english
 Type: Package
 Title: Translate Integers into English
-Version: 1.2-3
-Date: 2019-03-16
+Version: 1.2-4
+Date: 2019-12-07
 Author: John Fox, Bill Venables, Anthony Damico and Anne Pier Salverda
 Maintainer: Bill Venables <Bill.Venables@gmail.com>
 Description: Allow numbers to be presented in an English language
@@ -13,8 +13,8 @@ License: GPL-2
 LazyLoad: yes
 NeedsCompilation: no
 Encoding: UTF-8
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
 VignetteBuilder: knitr
-Packaged: 2019-03-23 06:11:28 UTC; bill
+Packaged: 2019-12-08 03:12:11 UTC; Bill Venables
 Repository: CRAN
-Date/Publication: 2019-03-23 06:30:03 UTC
+Date/Publication: 2019-12-08 05:20:02 UTC
