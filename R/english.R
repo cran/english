@@ -150,7 +150,7 @@ as.character.english <- function (x, ...) {
                  and(digits[(3 * nSuffix):1]),
                  helper(makeNumber(digits[(3 * nSuffix):1]))))
     }
-    gsub("y ([[:alpha:]]+)", "y-\\1", out) ## correct hyphenation
+    gsub("y (one|two|three|four|five|six|seven|eight|nine)", "y-\\1", out) ## correct hyphenation
   }
   r <- character(length(x))
   bad <- is.na(x) | is.nan(x) | is.infinite(x)

@@ -1,13 +1,13 @@
 Package: english
 Type: Package
 Title: Translate Integers into English
-Version: 1.2-4
-Date: 2019-12-07
+Version: 1.2-5
+Date: 2020-01-26
 Author: John Fox, Bill Venables, Anthony Damico and Anne Pier Salverda
 Maintainer: Bill Venables <Bill.Venables@gmail.com>
 Description: Allow numbers to be presented in an English language
         version, one, two, three, ...  Ordinals are also available,
-        first, second, third, ...
+        first, second, third, ... and indefinite article choice, "a" or "an".
 Suggests: utils, knitr, rmarkdown
 License: GPL-2
 LazyLoad: yes
@@ -15,6 +15,6 @@ NeedsCompilation: no
 Encoding: UTF-8
 RoxygenNote: 7.0.2
 VignetteBuilder: knitr
-Packaged: 2019-12-08 03:12:11 UTC; Bill Venables
+Packaged: 2020-01-26 05:14:22 UTC; bill
 Repository: CRAN
-Date/Publication: 2019-12-08 05:20:02 UTC
+Date/Publication: 2020-01-26 06:40:19 UTC
