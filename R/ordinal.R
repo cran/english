@@ -19,18 +19,19 @@ ordinal <- function(x, ...) {
 ordinal.english <- function(x, ...) {
   Cards <- c("one",  "two",    "three", "eight",  "nine")
   Ords <- c("first", "second", "third", "eighth", "ninth")
-  initial <- sub("^(.*) (.*)$", "\\1 ", x)
-  final   <- sub("^(.*) (.*)$", "\\2",  x)
+  initial <- sub("^(.*)([ -])(.*)$", "\\1", x)
+  connect <- sub("^(.*)([ -])(.*)$", "\\2", x)
+  final   <- sub("^(.*)([ -])(.*)$", "\\3", x)
 
   initial[initial == final] <- ""
+  connect[connect == final] <- ""
 
   final <- sub("ty$", "tie", final) ## 20, 30, ...
   final <- sub("ve$", "f"  , final) ## 5 and 12
-
   final <- ifelse(final %in% Cards, Ords[match(final, Cards)],
                   paste0(final, "th"))
 
-  res <- paste0(initial, final)
+  res <- paste0(initial, connect, final)
   class(res) <- c("ordinal", "character")
   res
 }

@@ -1,13 +1,13 @@
-1b401f37696a8189dc079aeb8e9896b4 *DESCRIPTION
+ac5348c4c49923dd3ff5c191dcd560c6 *DESCRIPTION
 db1792f7194be3390b80b6428beff6d3 *NAMESPACE
 2859de3e8b6c8ab7394b27d71d7a7e32 *R/english.R
 1cc8ea6a5fceb7f11a14be4731e11acb *R/indefinite.R
-4f1eafeeb6e6c31915b205482d1fa0e8 *R/ordinal.R
+445355e6960e9c9a7322d7e9070f9f0b *R/ordinal.R
 01f83662a1d90100c2cdc0068913df2a *R/words.R
-2974ce35ab0d90f11dc7a3094da6a94e *build/vignette.rds
+241399a0d8fdb90d0bcdabed7577bb0a *build/vignette.rds
 0cdc7b98231d20fce8ea61768f5cd499 *inst/doc/the-english-patient.R
 49e229bc8067502a4a9854179a69b79d *inst/doc/the-english-patient.Rmd
-2816d3e9011b234057b8a095b9b81e27 *inst/doc/the-english-patient.pdf
+b2554eff7f483bca8b8be42ef6cd4e97 *inst/doc/the-english-patient.pdf
 bf35e25c0ece47a65304e6e91d28c974 *man/Ops.english.Rd
 247d00e512e6de00cca8f1e62827f13e *man/as.english.Rd
 37c4e9f016cc534dd24bca31ba0b6fc4 *man/indefinite.Rd
